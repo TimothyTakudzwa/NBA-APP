@@ -1,0 +1,18 @@
+.header {
+    background-color: black;
+    border: 1px solid black;
+    color: white
+}
+
+.headeropt {
+    display: flex;
+}
+
+.logo{
+    flex-grow: 1;
+    padding-top: 8px;
+}
+
+.logo img {
+    width: 10%;
+}

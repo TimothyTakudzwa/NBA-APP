@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import style from './header.module.css';
+import {Link} from 'react-router-dom';
+import FontAwesome from 'react-fontawesome'
 
 class Header extends Component {
     constructor(props) {
@@ -6,9 +9,28 @@ class Header extends Component {
         this.state = {  }
     }
     render() { 
+
+const navBars = () => {
+    return (
+        <div className={style.bars}>
+            <FontAwesome name="bars"/>
+        </div>
+    )
+}
+
+const logo = () => {
+    return (
+        <Link to="/" className={style.logo}>
+            <img alt="My Logo" src="http://www.stickpng.com/assets/images/58428defa6515b1e0ad75ab4.png" />
+        </Link>
+        )
+    }           
         return ( 
-            <header>
-                This is my header
+            <header className={style.header}>
+               <div className={style.headeropt}>
+               {navBars()}
+                 {logo()}
+               </div>              
             </header>
          );
     }
