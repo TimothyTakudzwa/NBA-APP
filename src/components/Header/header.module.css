@@ -14,5 +14,12 @@
 }
 
 .logo img {
-    width: 10%;
+    width: 50px;
+    margin-left:10px;
+    padding-top: 2px
+    
+}
+.bars{
+    font-size: 30px;
+    padding-top: 11px
 }
